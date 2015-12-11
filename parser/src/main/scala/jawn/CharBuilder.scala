@@ -39,7 +39,7 @@ private[jawn] final class CharBuilder {
     resizeIfNecessary(tlen)
     var i = 0
     var j = len
-    while (i < s.length) { cs(j) = s.charAt(i); i += 1; j += 1 }
+    while (i < s.length) { cs(j) = s.charAt(i); i += 1; j += 1; len += 1 }
   }
 
   def append(c: Char) {
